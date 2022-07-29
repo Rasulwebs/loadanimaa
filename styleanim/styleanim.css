@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* anima css mustaqil*/
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .ring{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: -30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 4px solid #fff;
+    border: 4px solid transparent;
+    border-top: 4px solid #24ecff;
+    animation-name: animaline;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animaline{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+}
+
+
+.container .ring:nth-child(3){
+   position: absolute;
+   top: -66.6px;
+   animation-name: animaline2;
+   animation-duration: 4s;
+   animation-delay: -3s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   border-top: 4px solid transparent;
+   border-left: 4px solid #e11cf8;
+}
+
+.container .ring:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    top: initial;
+    width: 15px;
+    height: 15px;
+    background: #e11cf8;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+    box-shadow: 0 0 0 5px #e11cf833,    0 0 0 10px #e11cf822,    0 0 0 20px #e11cf811,    0 0 20px #e11cf8,    0 0 50px #e11cf8;
+}
+.container .ring::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #24ecff;
+    top: 12px;
+    right: 12px;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+    box-shadow: 0 0 0 5px #24ecff33,    0 0 0 10px #24ecff22,    0 0 0 20px #24ecff11,    0 0 20px #24ecff,    0 0 50px #24ecff;
+}
+
+.container .ring:nth-child(2){
+animation-name: animaline2;
+animation-duration: 4s;
+animation-delay: -1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+border-top: 4px solid transparent;
+border-left: 4px solid #93ff2d;
+}
+
+
+@keyframes animaline2{
+    0%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+
+100%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+}
+
+/* .container .ring:nth-child(2)::before{
+    
+} */
+.container .ring:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    top: initial;
+    width: 15px;
+    height: 15px;
+    background: #93ff2d;
+    bottom: 12px;
+    left: 12px;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+    box-shadow: 0 0 0 5px #93ff2d33,    0 0 0 10px #93ff2d22,    0 0 0 20px #93ff2d11,    0 0 20px #93ff2d,    0 0 50px #93ff2d;
+}
+
+.container p{
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom: -100px;
+    letter-spacing: 0.15em;
+}
+
+
+
